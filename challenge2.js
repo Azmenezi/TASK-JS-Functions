@@ -24,11 +24,12 @@ function isOdd(n) {
   // Your code here
 
   if(n % 2==0){
-    console.log("Even")
+   return true
   } else {
-    console.log("Odd")
+    return false
   }
 }
+console.log(isOdd()) 
 
 /**
  * oddsSmallerThan(n):
