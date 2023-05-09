@@ -8,6 +8,7 @@
  */
 function greet(name) {
   // Your code here
+  console.log(`Hello ${name}`)
 }
 
 /**
@@ -21,6 +22,12 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+
+  if(n % 2==0){
+    console.log("Even")
+  } else {
+    console.log("Odd")
+  }
 }
 
 /**
@@ -34,6 +41,7 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  
 }
 
 /**
@@ -49,3 +57,9 @@ function oddsSmallerThan(n) {
 function squareOrDouble(n) {
   // Your code here
 }
+
+// let nums = [493726,1525,574 ,1001,1000, 8, 6, 9];
+
+// nums.sort();
+
+// console.log(nums)
