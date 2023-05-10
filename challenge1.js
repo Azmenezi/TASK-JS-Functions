@@ -60,11 +60,12 @@ printHello("Azizan", "es")
  */
 
 function printMax(n1, n2){
-    if(n1 > n2){
-        console.log(n1)
-    }else if(n2 > n1){
-        console.log(n2)
-    }
+    // if(n1 > n2){
+    //     console.log(n1)
+    // }else if(n2 > n1){
+    //     console.log(n2)
+    // }
+    console.log(Math.max(n1,n2))
 }
 
 printMax(2, 6)
