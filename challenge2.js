@@ -10,7 +10,7 @@ function greet(name) {
   // Your code here
   console.log(`Hello ${name}`)
 }
-
+greet("Azizan")
 /**
  * isOdd(n):
  * - receives a number n
@@ -23,13 +23,13 @@ function greet(name) {
 function isOdd(n) {
   // Your code here
 
-  if(n % 2==0){
+  if(n % 2!==0){
    return true
   } else {
     return false
   }
 }
-console.log(isOdd()) 
+console.log(isOdd(8)) 
 
 /**
  * oddsSmallerThan(n):
@@ -42,9 +42,22 @@ console.log(isOdd())
  */
 function oddsSmallerThan(n) {
   // Your code here
-  
+  let oddsCount = 0
+  // let i = 0
+  // if (i < n){
+  //   i++
+  // }
+  // if(isOdd(i)== true){
+  //    oddsCount++
+  // }
+  for (let i = 0; i < n; i++){
+    if(isOdd(i)){
+     oddsCount++
+    }
+  }
+  return oddsCount++
 }
-
+console.log(oddsSmallerThan(20))
 /**
  * squareOrDouble(n):
  * - receives a number n
@@ -57,8 +70,15 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+ 
+  if(isOdd(n) == true){
+    return n * n
+  } else {
+    return n * 2
+  }
+  
 }
-
+console.log(squareOrDouble(3))
 // let nums = [493726,1525,574 ,1001,1000, 8, 6, 9];
 
 // nums.sort();
